@@ -13,7 +13,7 @@ object KafkaWordCount {
     val ssc = new StreamingContext(sparkConf, Seconds(10))
 
     //设置kafka参数，定义brokers集合
-    val brokers = "9.135.89.169:9092"
+    val brokers = "localhost:9092"
     val groupId = "webGroup"
     val topics = "topic1"
 
